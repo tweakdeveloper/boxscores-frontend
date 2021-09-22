@@ -1,0 +1,40 @@
+{
+  "name": "boxscores",
+  "version": "1.0.0",
+  "description": "frontend to display MLB box scores",
+  "main": "public/index.html",
+  "author": "Nolan Clark <tweakdeveloper@gmail.com>",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tweakdeveloper/boxscores-frontend.git" 
+  },
+  "private": true,
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "format": "prettier --write \"{src,types}/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "prettier --check \"{src,types}/**/*.{js,jsx,ts,tsx}\"",
+    "test": "web-test-runner \"src/**/*.test.{js,jsx,ts,tsx}\""
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@snowpack/web-test-runner-plugin": "^0.2.2",
+    "@testing-library/react": "^12.1.0",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/react": "^17.0.24",
+    "@types/react-dom": "^17.0.9",
+    "@types/snowpack-env": "^2.3.4",
+    "@web/test-runner": "^0.13.17",
+    "chai": "^4.3.4",
+    "prettier": "2.4.1",
+    "snowpack": "^3.8.8",
+    "typescript": "^4.4.3"
+  }
+}
